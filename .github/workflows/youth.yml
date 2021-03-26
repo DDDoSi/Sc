@@ -26,8 +26,8 @@ jobs:
           npm install
       - name: 运行 【中青看点】
         if: env.YOUTH_HEADER
-            env.YOUTH_ARTBODY
-            env.YOUTH_TIME
+                YOUTH_ARTBODY
+                YOUTH_TIME
         run: |
           node Task/youth.js
         env:
